@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "768205244460",
+    "firebase_url": "https://firequest-d3b6d.firebaseio.com",
+    "project_id": "firequest-d3b6d",
+    "storage_bucket": "firequest-d3b6d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:768205244460:android:dd744d35f9d183c9",
+        "android_client_info": {
+          "package_name": "com.wb.firequest"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "768205244460-jkpqgndt8gp2to7ve6pq5h8ljo4qd724.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC30dsa-YFJlf11OH013o39ff90rmYOaec"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
