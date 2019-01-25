@@ -66,8 +66,14 @@ public class FormManager : MonoBehaviour {
 			UpdateStatus(operation + " encountered an error: " + task.Exception);
 		} else if (task.IsCompleted)
 		{
+			if(operation == "sign_up"){
+				Firebase.Auth.FirebaseUser newUser = task.Result;
+				Debug.Log("Welcome");
+				Player player = new Player(newUser.Email, 0, 1);
+				DatabaseManager.sharedInstance.CreateNewPlayer(player, newUser.UserId);
+
+			}
 			// Firebase user has been created.
-			Firebase.Auth.FirebaseUser newUser = task.Result;
 			UpdateStatus("Loading game scene...");
 			yield return new WaitForSeconds(1.5f);
 			SceneManager.LoadScene("Player List");

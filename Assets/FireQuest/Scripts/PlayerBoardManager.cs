@@ -4,13 +4,17 @@ using UnityEngine;
 
 public class PlayerBoardManager : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
-		
+	public List<Player> playerList = new List<Player>();
+
+	private void Awake()
+	{
+		playerList.Clear();
+		DatabaseManager.sharedInstance.GetPlayers(result =>
+		{
+			playerList = result;
+			Debug.Log(playerList[0].email);
+		});
+
 	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+
 }
